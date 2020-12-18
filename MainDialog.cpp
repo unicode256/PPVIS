@@ -26,6 +26,9 @@ void MainDialog::DoDataExchange(CDataExchange* pDX)
 	CDialogEx::DoDataExchange(pDX);
 }
 
+int MainDialog::getOperation() {
+	return operationID;
+}
 
 BEGIN_MESSAGE_MAP(MainDialog, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_SHOW_LB, &MainDialog::OnBnClickedButtonShowLb)

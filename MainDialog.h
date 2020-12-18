@@ -15,9 +15,12 @@ public:
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_MAIN_DIALOG };
 #endif
+private: 
+	int operationID;
 public: 
 	afx_msg void OnBnClickedOk();
 	virtual BOOL OnInitDialog();
+	int getOperation();
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // поддержка DDX/DDV
 	DECLARE_MESSAGE_MAP()
