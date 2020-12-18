@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{BA7F4368-9201-4DCE-A5D6-D15A7BB3D725}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>PPVIS2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AddCollDialog.h" />
+    <ClInclude Include="AddFriendsDialog.h" />
+    <ClInclude Include="AskBookDialog.h" />
+    <ClInclude Include="Book.h" />
+    <ClInclude Include="BookController.h" />
+    <ClInclude Include="BookDAO.h" />
+    <ClInclude Include="BookDAOImpl.h" />
+    <ClInclude Include="BookReadingDialog.h" />
+    <ClInclude Include="BookService.h" />
+    <ClInclude Include="BookServiceImpl.h" />
+    <ClInclude Include="BuyBookController.h" />
+    <ClInclude Include="BuyBookIn.h" />
+    <ClInclude Include="BuyBookInLitres.h" />
+    <ClInclude Include="BuyBookOutDialog.h" />
+    <ClInclude Include="ChangeCollectionDialog.h" />
+    <ClInclude Include="ChangeFriendInfoDialog.h" />
+    <ClInclude Include="CreateNoteDialog.h" />
+    <ClInclude Include="Customer.h" />
+    <ClInclude Include="CustomerController.h" />
+    <ClInclude Include="CustomerDAO.h" />
+    <ClInclude Include="CustomerDAOImpl.h" />
+    <ClInclude Include="CustomerFriendsService.h" />
+    <ClInclude Include="CustomerFriendsServiceImpl.h" />
+    <ClInclude Include="CustomerInteractionController.h" />
+    <ClInclude Include="CustomerInteractionDAO.h" />
+    <ClInclude Include="CustomerInteractionDAOImpl.h" />
+    <ClInclude Include="CustomerService.h" />
+    <ClInclude Include="CustomerServiceImpl.h" />
+    <ClInclude Include="EntryDialog.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="FriendDialog.h" />
+    <ClInclude Include="Injector.h" />
+    <ClInclude Include="LCollection.h" />
+    <ClInclude Include="LCollectionController.h" />
+    <ClInclude Include="LCollectionDAO.h" />
+    <ClInclude Include="LCollectionDAOImpl.h" />
+    <ClInclude Include="LCollectionService.h" />
+    <ClInclude Include="LCollectionServiceImpl.h" />
+    <ClInclude Include="Library.h" />
+    <ClInclude Include="LibraryController.h" />
+    <ClInclude Include="LibraryDAO.h" />
+    <ClInclude Include="LibraryDAOImpl.h" />
+    <ClInclude Include="LibraryService.h" />
+    <ClInclude Include="ListOfBooksDialog.h" />
+    <ClInclude Include="ListOfCollectionsDialog.h" />
+    <ClInclude Include="LoginController.h" />
+    <ClInclude Include="MainDialog.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PPVIS2.h" />
+    <ClInclude Include="PPVIS2Dlg.h" />
+    <ClInclude Include="RegistrationController.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ShareBookDialog.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserSettingsDialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddCollDialog.cpp" />
+    <ClCompile Include="AddFriendsDialog.cpp" />
+    <ClCompile Include="AskBookDialog.cpp" />
+    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="BookController.cpp" />
+    <ClCompile Include="BookDAO.cpp" />
+    <ClCompile Include="BookDAOImpl.cpp" />
+    <ClCompile Include="BookReadingDialog.cpp" />
+    <ClCompile Include="BookService.cpp" />
+    <ClCompile Include="BookServiceImpl.cpp" />
+    <ClCompile Include="BuyBookController.cpp" />
+    <ClCompile Include="BuyBookIn.cpp" />
+    <ClCompile Include="BuyBookInLitres.cpp" />
+    <ClCompile Include="BuyBookOutDialog.cpp" />
+    <ClCompile Include="ChangeCollectionDialog.cpp" />
+    <ClCompile Include="ChangeFriendInfoDialog.cpp" />
+    <ClCompile Include="CreateNoteDialog.cpp" />
+    <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="CustomerController.cpp" />
+    <ClCompile Include="CustomerDAO.cpp" />
+    <ClCompile Include="CustomerDAOImpl.cpp" />
+    <ClCompile Include="CustomerFriendsService.cpp" />
+    <ClCompile Include="CustomerFriendsServiceImpl.cpp" />
+    <ClCompile Include="CustomerInteractionController.cpp" />
+    <ClCompile Include="CustomerInteractionDAO.cpp" />
+    <ClCompile Include="CustomerInteractionDAOImpl.cpp" />
+    <ClCompile Include="CustomerService.cpp" />
+    <ClCompile Include="CustomerServiceImpl.cpp" />
+    <ClCompile Include="EntryDialog.cpp" />
+    <ClCompile Include="FriendDialog.cpp" />
+    <ClCompile Include="Injector.cpp" />
+    <ClCompile Include="LCollection.cpp" />
+    <ClCompile Include="LCollectionController.cpp" />
+    <ClCompile Include="LCollectionDAO.cpp" />
+    <ClCompile Include="LCollectionDAOImpl.cpp" />
+    <ClCompile Include="LCollectionService.cpp" />
+    <ClCompile Include="LCollectionServiceImpl.cpp" />
+    <ClCompile Include="Library.cpp" />
+    <ClCompile Include="LibraryController.cpp" />
+    <ClCompile Include="LibraryDAO.cpp" />
+    <ClCompile Include="LibraryDAOImpl.cpp" />
+    <ClCompile Include="LibraryService.cpp" />
+    <ClCompile Include="ListOfBooksDialog.cpp" />
+    <ClCompile Include="ListOfCollectionsDialog.cpp" />
+    <ClCompile Include="LoginController.cpp" />
+    <ClCompile Include="MainDialog.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PPVIS2.cpp" />
+    <ClCompile Include="PPVIS2Dlg.cpp" />
+    <ClCompile Include="RegistrationController.cpp" />
+    <ClCompile Include="ShareBookDialog.cpp" />
+    <ClCompile Include="UserSettingsDialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PPVIS2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PPVIS2.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\PPVIS2.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
